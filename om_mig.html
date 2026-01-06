@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om mig</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/om_mig.css" />
+    <link rel="stylesheet" href="js/om_mig.js" />
+  </head>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+  <body>
+    <header class="site-header">
+      <div class="header-inner"><a href="index.html" class="logo">Menu</a></div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="about-grid">
+          <div class="about-image">
+            <img src="billeder/Mig_i_paris.png" alt="Portræt" />
+          </div>
+
+          <!-- Højre: tekst -->
+          <div class="about-content">
+            <div class="about-intro">
+              <section class="about-footer">
+                <h1>Maria Beicker <br />Christensen</h1>
+              </section>
+              <p class="about-text">
+                Mit arbejde hos Boii Studios som SoMe-medarbejder har virkelig
+                åbnet mine øjne for, hvor spændende og alsidigt det digitale og
+                visuelle univers er. Her lærte jeg at formidle ideer visuelt på
+                sociale medier og arbejde med grafiske løsninger, samtidig med
+                at jeg fik erfaring med målrettet kommunikation og kreativ
+                problemløsning. Derudover fik jeg også både erfaring bagved og
+                foran kameret, som gav mig en større forståelse for det
+                virsuelle. Det var med til at bekræfte min interesse for
+                multimediedesign, fordi jeg oplevede, hvor tilfredsstillende det
+                er at omsætte kreative idéer til konkrete, digitale projekter,
+                der har effekt og kan inspirere andre.
+              </p>
+            </div>
+
+            <div class="about-me">
+              <div>
+                <p class="my-title">Rolle</p>
+                <p>Digital Designer</p>
+              </div>
+
+              <div>
+                <p class="my-title">Fokus</p>
+                <p>UI / UX<br />Frontend</p>
+              </div>
+
+              <div>
+                <p class="my-title">Værktøjer</p>
+                <p>Figma<br />HTML / CSS</p>
+              </div>
+            </div>
+            <div class="about-more">
+              <button class="about-btn" onclick="openPopup()">
+                Mere om mig
+              </button>
+            </div>
+
+            <div class="popup-overlay" id="popup">
+              <div class="popup-content">
+                <button class="popup-close" onclick="closePopup()">×</button>
+                <h2>Mere om mig</h2>
+                <p>
+                  Jeg er passioneret omkring digitalt design og brugeroplevelser
+                  og motiveres af at skabe løsninger, der både er æstetiske og
+                  funktionelle. Jeg arbejder struktureret, men elsker også den
+                  kreative proces, hvor ideer får lov til at udvikle sig.
+                  <br />Jeg har lært en masse nyt på 1. semester. Jeg har blandt
+                  andet lært hvordan man koder, men også hvor svært jeg synes,
+                  det er. Jeg mærker helt sikkert, at jeg bliver udfordret, når
+                  jeg skal kode et site fra bunden. Samtidig har 1. semester
+                  også bekræftet mig i, hvor meget jeg går op i æstetik, design
+                  og brugeroplevelse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- små billeder -->
+          <div class="about-images-small">
+            <img src="billeder/IMG_4077.jpg" alt="mig" />
+            <img src="billeder/stoy.JPG" alt="mig" />
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
